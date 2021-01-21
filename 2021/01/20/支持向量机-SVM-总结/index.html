@@ -28,7 +28,7 @@
 <meta property="og:description" content="支持向量机知识点总结与数学推导。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-20T13:02:48.000Z">
-<meta property="article:modified_time" content="2021-01-21T12:30:53.426Z">
+<meta property="article:modified_time" content="2021-01-21T12:35:39.162Z">
 <meta property="article:author" content="lipengqian">
 <meta property="article:tag" content="ML">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-21 20:30:53" itemprop="dateModified" datetime="2021-01-21T20:30:53+08:00">2021-01-21</time>
+                <time title="修改时间：2021-01-21 20:35:39" itemprop="dateModified" datetime="2021-01-21T20:35:39+08:00">2021-01-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,11 +231,11 @@ s.t. \ y_i(\pmb{\omega}^T \pmb{x} + b) \ge 1, \quad i=1,2,...,m.</script><p>实�
 <script type="math/tex; mode=display">
 \max \limits_{\pmb{\alpha}}\ \sum\limits_{\pmb{i=1}}^m \alpha_i-\frac{1}{2}\displaystyle\sum_{i=1}^m\displaystyle\sum_{j=1}^m\alpha_i\alpha_jy_iy_j\pmb{x}_i^T\pmb{x}_j</script><script type="math/tex; mode=display">
 s.t. \ \displaystyle\sum_{i=1}^m\alpha_iy_i=0</script><script type="math/tex; mode=display">
-\alpha \ge 0, \quad i=1,2,...,m.</script><script type="math/tex; mode=display">
-\begin{aligned} 
-loss&=(y_i-Q(s,a;\theta))^2 \\
-&=(r+\gamma \max Q(s^{'},a^{'};\theta^{-})-Q(s,a;\theta)) ^2\\
-\end{aligned}</script>
+\alpha \ge 0, \quad i=1,2,...,m.</script><p>软间隔SVM：</p>
+<script type="math/tex; mode=display">
+\max \limits_{\pmb{\alpha}}\ \sum\limits_{\pmb{i=1}}^m \alpha_i-\frac{1}{2}\displaystyle\sum_{i=1}^m\displaystyle\sum_{j=1}^m\alpha_i\alpha_jy_iy_j\pmb{x}_i^T\pmb{x}_j</script><script type="math/tex; mode=display">
+s.t. \ \displaystyle\sum_{i=1}^m\alpha_iy_i=0</script><script type="math/tex; mode=display">
+0 \le \alpha \le C, \quad i=1,2,...,m.</script>
     </div>
 
     
